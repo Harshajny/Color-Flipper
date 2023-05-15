@@ -5,7 +5,7 @@ const buttonss = document.querySelector(".btn-btn-hero");
 const navlinks = document.querySelector(".container");
 const navcenter = document.querySelector(".nav-center");
 
-
+btn.addEventListener('click', playMusic);
 btn.addEventListener('click', function() {
 let hexColor="#";
 for(let i=0;i<6;i++)
@@ -28,4 +28,9 @@ color.textContent =  colors[randomNumber];
 
 function getRandomNumber(min, max) {
 return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function playMusic()
+{
+  let audio=new Audio("effect.mp3");
+  audio.play();
 }
