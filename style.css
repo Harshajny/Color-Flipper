@@ -8,6 +8,17 @@ line-height: 51px;
 text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   
 }
+
+ 
+.nav-center
+{
+padding-right: -20px;
+padding-left: 40px;
+background-color:#EAEAEA;
+height:70px;
+filter: drop-shadow(3px 3px 5px black);
+}
+
  .nav-center h4
  {
  
@@ -16,30 +27,33 @@ align-items: center;
 text-align: center;
 letter-spacing: 0.05em;
 text-transform: uppercase;
-color: #5967E4;
+color:white; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+ 
 }
 .nav-center #link1
 {position: absolute;
 right: 250px;
-top: 45px;
+top: 2px;
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.05em;
 text-transform: uppercase;
-color: #5967E4;
+color:white;
+text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .nav-center #link2
 {
 position: absolute;
 right:150px;
-top: 45px;
+top: 2px;
 display: flex;
 align-items: center;
 text-align: center;
 letter-spacing: 0.05em;
 text-transform: uppercase;
-color: #5967E4;
+color:white;
+text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .nav-links a
 {
@@ -49,22 +63,25 @@ text-decoration: none;
 {
 list-style: none;
 }
-  
-
-
-
-main .container
-{
-background: #5D5FEF;
-border-radius: 31px;
-position: absolute;
-width: 500px;
-height: 200px;
-left: 291px;
-top: 250px;
-filter: drop-shadow(8px 14px 14px #ACACAC);
+.nav-links #link1:hover{
+    color:yellow;
 }
-.container a
+.nav-links #link2:hover{
+    color: aqua;
+}
+main {
+    min-height: calc(100vh - 3rem);
+    display: grid;
+    place-items: center;
+  } 
+main .container  
+{
+ 
+filter: drop-shadow(8px 10px 14px #ACACAC);
+background:black;
+border-radius: 10px;
+text-align: center;}
+.container h2
 {
 font-size: 20px;
 align-items: center;
@@ -73,8 +90,12 @@ letter-spacing: 0.05em;
 text-transform: uppercase;
 color: #EAEAEA;
 margin-left:50px;
-}
-.container >button
+margin-right:50px;
+
+margin-top:10px;
+text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;}
+
+.buttonss >button
 {display: flex;
 flex-direction: row;
 align-items: flex-start;
@@ -83,23 +104,30 @@ gap: 15.2px;
 position: absolute;
 width: 244px;
 height: 74px;
+
 left: calc(50% - 244px/2 - 0.02px);
-top: calc(50% - 74px/2 + 0.37px);
-background: radial-gradient(99.77% 100% at 31.97% 99.5%, rgb(52, 50, 164) 0%, rgb(114, 151, 205) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #3434B9;
-box-shadow: inset 0px -5px 0px #313686;
+top:350px;
+background-color:transparent;
+ border-color: black;
 border-radius: 6.07921px;}
 
-.container h{
+.buttonss .btn-btn-hero{
 
 font-family: 'Rubik';
 font-style: normal;
 font-weight: 500;
-font-size: 30.396px;
+font-size: 30px;
 line-height: 36px;
 display: flex;
 align-items: center;
 text-align: center;
 text-transform: uppercase;
 margin-left:10px;
+padding-left:39px;
 color: #FFFFFF;
+margin-top: 5px;
+}
+
+.btn-btn-hero h3{
+    color:black;
 }
